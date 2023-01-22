@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_addresses
+    description: Contains information about addresses 
+
+  - name: stg_events
+    description: Contains information about events and sessions
+
+  - name: stg_order_items
+    description: Contains information about orders i.e products and quantities 
+
+  - name: stg_orders
+    description: Contains complete information about orders
+
+  - name: stg_products
+    description: Contains information about products and its inventory 
+
+  - name: stg_promos
+    description: Contains information about promos and its status 
+
+  - name: stg_users
+    description: Contains information about users and their contact details 
