@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fact_page_views
+    description: Contains information about product level event information

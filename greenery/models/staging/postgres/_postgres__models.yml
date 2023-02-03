@@ -2,22 +2,63 @@ version: 2
 
 models:
   - name: stg_addresses
-    description: Contains information about addresses 
+    description: Contains information about addresses
+    columns:
+      - name: address_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
 
   - name: stg_events
     description: Contains information about events and sessions
+    columns:
+      - name: event_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
 
   - name: stg_order_items
     description: Contains information about orders i.e products and quantities 
+    columns:
+      - name: order_id
+        description: "The key for this table"
+        tests:
+          - not_null
 
   - name: stg_orders
     description: Contains complete information about orders
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
 
   - name: stg_products
     description: Contains information about products and its inventory 
+    columns:
+      - name: product_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
 
   - name: stg_promos
     description: Contains information about promos and its status 
+    columns:
+      - name: promo_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
 
   - name: stg_users
     description: Contains information about users and their contact details 
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
